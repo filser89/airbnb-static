@@ -1,0 +1,6 @@
+<h1>Choose your apartment</h1>
+<% @apartments.each do |apartment| %>
+  <div class="card">
+    <h3><%= link_to apartment["name"], apartment_path(apartment["id"])  %></h3>
+  </div>
+<% end %>

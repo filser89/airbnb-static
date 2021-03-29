@@ -1,0 +1,10 @@
+<div class="apt">
+  <h2>
+    <%= @apartment["name"] %>
+  </h2>
+  <img class="apartment-pic" src='<%= @apartment["imageUrl"] %>' alt="">
+  <h2>
+    <%= @apartment["price"].to_s + ' ' + @apartment["priceCurrency"] %>
+  </h2>
+  <p> <%= link_to 'See all apartments', apartments_path %> </p>
+</div>
